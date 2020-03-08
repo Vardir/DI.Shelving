@@ -26,7 +26,7 @@ namespace Vardirsoft.DI
         {
             var shelf = _shelves[keyType];
             
-            if (shelf.ContainedInstance is null)
+            if (shelf.ContainedInstance is NullObject)
             {
                 var resolvedDependencies = _dependencyResolver.Resolve(this, shelf.Dependencies).ToArray();
                 var instance = _instanceCreator.Create(shelf.InstanceType, resolvedDependencies);

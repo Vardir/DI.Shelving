@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 
+using Vardirsoft.DI.Dependencies;
 using Vardirsoft.DI.Interfaces;
 
 namespace Vardirsoft.DI
@@ -18,6 +19,7 @@ namespace Vardirsoft.DI
             _constructorSelector = constructorSelector;
             
             _shelfBuilders = new List<IShelfBuilder>();
+            DependenciesOptimizer = new NullDependenciesOptimizer();
         }
 
         void IDIContainerBuilder.Register(IShelfBuilder shelfBuilder)

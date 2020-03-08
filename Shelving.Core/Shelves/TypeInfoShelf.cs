@@ -10,7 +10,7 @@ namespace Vardirsoft.DI
     {
         public InstanceCreationMode CreationMode { get; }
         
-        public object ContainedInstance => null;
+        public object ContainedInstance => NullObject.Instance;
 
         public Type RegistrationType { get; }
 
