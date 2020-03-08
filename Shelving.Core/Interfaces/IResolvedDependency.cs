@@ -6,4 +6,11 @@ namespace Vardirsoft.DI.Interfaces
         
         IDependency Dependency { get; }
     }
+
+    public class NullResolvedDependency : IResolvedDependency
+    {
+        public object Instance => NullObject.Instance;
+        
+        public IDependency Dependency { get; }
+    }
 }

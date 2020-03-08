@@ -4,4 +4,9 @@ namespace Vardirsoft.DI.Interfaces
     {
         
     }
+
+    public sealed class NullDependency : IDependency
+    {
+        
+    }
 }

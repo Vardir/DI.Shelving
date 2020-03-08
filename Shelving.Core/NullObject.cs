@@ -1,6 +1,6 @@
 namespace Vardirsoft.DI
 {
-    public class NullObject
+    public sealed class NullObject
     {
         private static readonly NullObject _instance = new NullObject();
 
