@@ -1,0 +1,9 @@
+
+#Build folders
+bin/
+obj/
+/packages/
+
+#IDEA folders
+.idea/
+
