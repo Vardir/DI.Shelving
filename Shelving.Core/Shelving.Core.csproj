@@ -15,7 +15,6 @@
         <Copyright>Copyright © 2020 Andrew Satura</Copyright>
         <Description>Base library with custom DI implementation container</Description>
         <RepositoryType>Git</RepositoryType>
-        <PackageLicenseUrl>MIT</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/Vardir/DI.Shelving</RepositoryUrl>
         <PackageProjectUrl>https://github.com/Vardir/DI.Shelving</PackageProjectUrl>
         <PackageReleaseNotes>First release of custom DI container implementation</PackageReleaseNotes>
@@ -24,5 +23,14 @@
         <Product>DI.Shelving</Product>
         <FileVersion>1.0.0</FileVersion>
         <AssemblyVersion>1.0.0</AssemblyVersion>
+        <Version>1.0.1-alpha</Version>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
 </Project>
