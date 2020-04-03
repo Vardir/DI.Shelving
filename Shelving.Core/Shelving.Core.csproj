@@ -4,6 +4,9 @@
         <AssemblyName>di.shelving</AssemblyName>
         <RootNamespace>Vardirsoft.DI.Shelving</RootNamespace>
         <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
         
         <PackageId>Vardirsoft.Shelving.Core</PackageId>
         <Title>Shelving</Title>

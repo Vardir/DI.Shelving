@@ -7,3 +7,5 @@ obj/
 #IDEA folders
 .idea/
 
+#VS folder
+.vs/
