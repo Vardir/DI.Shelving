@@ -27,7 +27,7 @@ namespace Vardirsoft.DI
             _shelfBuilders.Add(shelfBuilder);
         }
         
-        public abstract IShelfBuildingSetup<T> Register<T>();
+        public abstract IShelfBuildingSetup<T> Register<T>() where T: notnull;
 
         public abstract IDIContainer Build(IDependencyResolver dependencyResolver, IInstanceCreator instanceCreator);
     }

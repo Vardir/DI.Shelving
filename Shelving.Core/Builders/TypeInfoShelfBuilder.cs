@@ -12,14 +12,15 @@ namespace Vardirsoft.DI.Builders
 
         private InstanceCreationMode _instanceCreationMode; 
         
-        internal IDIContainerBuilder ContainerBuilder { get; set; }
+        internal IDIContainerBuilder ContainerBuilder { get; }
         
         public Type RegistrationType { get; } = typeof(TKey);
 
         public Type InstanceType { get; } = typeof(TInstance);
 
-        public TypeInfoShelfBuilder(IDIConstructorSelector constructorSelector, IDIPropertiesSelector propertiesSelector)
+        public TypeInfoShelfBuilder(IDIContainerBuilder containerBuilder, IDIConstructorSelector constructorSelector, IDIPropertiesSelector propertiesSelector)
         {
+            ContainerBuilder = containerBuilder;
             _constructorSelector = constructorSelector;
             _propertiesSelector = propertiesSelector;
         }

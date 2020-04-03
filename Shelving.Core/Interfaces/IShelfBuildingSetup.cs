@@ -1,6 +1,6 @@
 namespace Vardirsoft.DI.Interfaces
 {
-    public interface IShelfBuildingSetup<TInstance>
+    public interface IShelfBuildingSetup<TInstance> where TInstance: notnull
     {
         ITypeInfoShelfBuilder<TKey, TInstance> As<TKey>();
 

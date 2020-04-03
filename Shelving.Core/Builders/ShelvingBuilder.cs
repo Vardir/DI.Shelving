@@ -22,10 +22,7 @@ namespace Vardirsoft.DI.Builders
         
         public override IShelfBuildingSetup<TInstance> Register<TInstance>()
         {
-            return new ShelfBuildingSetup<TInstance>(_constructorSelector, _propertiesSelector)
-            {
-                ContainerBuilder = this
-            };
+            return new ShelfBuildingSetup<TInstance>(this, _constructorSelector, _propertiesSelector);
         }
 
         public override IDIContainer Build(IDependencyResolver dependencyResolver, IInstanceCreator instanceCreator)
